@@ -1011,7 +1011,7 @@ p {
 .header_hero_shape::before {
   position: absolute;
   content: '';
-  width: 1000%;
+  width: 200%;
   height: 100%;
   background-color: #00a78e;
   -webkit-transform: skewX(20deg);
@@ -1049,13 +1049,13 @@ p {
   margin-top: 20px
 }
 
-@media (max-width:767px) {
+@media (max-width:800px) {
   .header_hero_content .header_title {
     font-size: 24px
   }
 }
 
-@media only screen and (min-width:576px) and (max-width:767px) {
+@media only screen and (min-width:576px) and (max-width:800px) {
   .header_hero_content .header_title {
     font-size: 30px
   }
@@ -2002,3 +2002,7 @@ p {
     font-size: 15px
   }
 }
+
+html {
+  overflow-x:hidden;
+  }
