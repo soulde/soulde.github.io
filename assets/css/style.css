@@ -946,7 +946,7 @@ p {
 }
 
 .header_social {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50px;
   -webkit-transform: translateY(-50%);
@@ -960,13 +960,15 @@ p {
 
 @media only screen and (min-width:1200px) and (max-width:1399px) {
   .header_social {
-    left: 20px
+    left: 20px;
+    top: 15%;
   }
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
   .header_social {
-    left: 20px
+    left: 20px;
+    top: 15%;
   }
 }
 
@@ -1089,8 +1091,8 @@ p {
 }
 
 .about_image .about_shape {
-  width: 404px;
-  height: 610px;
+  width: 80%;
+  height: 80%;
   border-left: 15px solid #00a78e;
   border-bottom: 15px solid #00a78e;
   position: absolute;
@@ -1117,7 +1119,7 @@ p {
   position: absolute;
   content: '';
   width: 15px;
-  height: 87%;
+  height: 100%;
   background-color: #00a78e;
   bottom: 0;
   right: 0
@@ -1126,17 +1128,9 @@ p {
 .about_image .about_shape::after {
   position: absolute;
   content: '';
-  width: 104%;
+  width: 100%;
   height: 15px;
   background-color: #00a78e;
-  top: 36px;
-  right: -2px;
-  -webkit-transform: rotate(11deg);
-  -moz-transform: rotate(11deg);
-  -ms-transform: rotate(11deg);
-  -o-transform: rotate(11deg);
-  transform: rotate(11deg);
-  border-top-left-radius: 20px
 }
 
 @media (max-width:767px) {
@@ -2005,4 +1999,95 @@ p {
 
 html {
   overflow-x:hidden;
+}
+
+.header_normal_shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1
+}
+
+.header_normal_shape::before {
+  position: absolute;
+  content: '';
+  width: 200%;
+  height: 10%;
+  background-color: #00a78e;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+  transform: skewX(20deg);
+  top: 0;
+  left: 0
+}
+.newsletter_main {
+  width: 100%;
+  float: left;
+  padding-top: 40px;
+}
+.recent_taital {
+  width: 100%;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  color: #00a78e;
+  text-transform: uppercase;
+}
+.recent_taital::after {
+  content: '';
+  position: relative;
+  background-color: #00a78e;
+  width: 130px;
+  height: 2px;
+  left: 0px;
+  right: initial;
+  margin: 0 auto;
+  bottom: 10px;
+  box-sizing: border-box;
+}
+
+.divide_shape {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 500px;
+  z-index: -1;
+  background-color: #00a78e;
+  border-radius: 2px;
+}
+.blog_container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width:576px) {
+  .blog_container {
+      max-width: 540px
   }
+}
+
+@media (min-width:768px) {
+  .blog_container {
+      max-width: 720px
+  }
+}
+
+@media (min-width:992px) {
+  .blog_container {
+      max-width: 1100px
+  }
+}
+
+@media (min-width:1200px) {
+  .blog_container {
+      max-width: 1300px
+  }
+}
