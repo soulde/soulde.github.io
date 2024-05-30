@@ -16129,7 +16129,8 @@ table.dataframe {
     float: left;
     margin-top: -33px;
     border-radius: .2em;
-    margin-right: .5em
+    margin-right: .5em;
+    padding: 0 5px
 }
 
 .site-header .site-title {
