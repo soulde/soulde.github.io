@@ -18,7 +18,6 @@
     --h5: #262626;
     --h6: #262626;
     --border: rgba(0, 0, 0, 0.2);
-    --logo: "/assets/img/line_logo.png";
 }
 
 html[data-theme=dark] {
