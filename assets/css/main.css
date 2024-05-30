@@ -17,7 +17,8 @@
     --h4: #262626;
     --h5: #262626;
     --h6: #262626;
-    --border: rgba(0, 0, 0, 0.2)
+    --border: rgba(0, 0, 0, 0.2);
+    --logo: "/assets/img/line_logo.png";
 }
 
 html[data-theme=dark] {
@@ -16103,7 +16104,7 @@ table.dataframe {
 }
 
 .site-header {
-    padding: 2% 2% 1% 2%;
+    padding: 2% 2% 1% 0%;
     background: var(--background);
     display: inline-block;
     float: left;
@@ -16124,13 +16125,13 @@ table.dataframe {
 }
 
 .site-header .avatar {
-    height: 3em;
-    width: 3em;
+    height: 4em;
+    /*width: 3em;*/
     float: left;
-    margin-top: -13px;
+    margin-top: -33px;
     border-radius: .2em;
     margin-right: .5em;
-    padding: 10px 10px
+    padding: 0 9px
 }
 
 .site-header .site-title {
