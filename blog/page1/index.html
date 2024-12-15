@@ -70,12 +70,13 @@
 <body>
 
 <header class="site-header"> <!-- Logo and title -->
-    <div class="branding"><a href="#"> <img alt="logo img" class="avatar"
-                                            src="/assets/img/soulde_icon2.png" loading="lazy"/>
-    </a> <a class="site-title" href="/"></a></div>
+
     <!-- Toggle menu -->
     <nav class="clear"><a aria-label="pull" id="pull" class="toggle" href="#"> <i class="fas fa-bars fa-lg"></i> </a>
         <!-- Menu -->
+        <div class="branding"><a href="/">SOULDE
+            <!--                    <img alt="logo img" class="avatar" src="/assets/img/soulde_icon2.png" loading="lazy"/>-->
+        </a></div>
         <ul class="hide">
             <li class="separator"> |</li>
             <li><a class="clear" aria-label="Gallery" title="Gallery" href="/gallery"> <span
@@ -83,17 +84,17 @@
             <li class="separator"> |</li>
             <li><a class="clear" aria-label="Portfolio" title="Portfolio" href="/portfolio"> <span
                     class="navbar-label ">Portfolio</span> </a></li>
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="About Me" title="About Me" href="/about"> <span-->
-<!--                    class="navbar-label ">About Me</span> </a></li>-->
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="Search" title="Search" href="/search"> <i-->
-<!--                    class="navbar-icon fas fa-search" aria-hidden="true"></i> <span-->
-<!--                    class="navbar-label navbar-label-with-icon">Search</span> </a></li>-->
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="Tags" title="Tags" href="/tags"> <i-->
-<!--                    class="navbar-icon fas fa-tags" aria-hidden="true"></i> <span-->
-<!--                    class="navbar-label navbar-label-with-icon">Tags</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="About Me" title="About Me" href="/about"> <span-->
+            <!--                    class="navbar-label ">About Me</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="Search" title="Search" href="/search"> <i-->
+            <!--                    class="navbar-icon fas fa-search" aria-hidden="true"></i> <span-->
+            <!--                    class="navbar-label navbar-label-with-icon">Search</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="Tags" title="Tags" href="/tags"> <i-->
+            <!--                    class="navbar-icon fas fa-tags" aria-hidden="true"></i> <span-->
+            <!--                    class="navbar-label navbar-label-with-icon">Tags</span> </a></li>-->
             <li class="separator"> |</li>
             <li><a id="theme-toggle" title=" " aria-label="" onclick="themeToggle()"></a></li>
         </ul>
@@ -125,7 +126,7 @@
         <div class="call-out call-out_img">
             <h1> Hello !!!<br/> Here is soulde' blog</h1>
         </div>
-        <article >
+        <article>
             <meta itemprop="headline" content="">
             <div class="page__inner-wrap">
                 <section class="page__content" itemprop="text">
@@ -152,11 +153,10 @@
                                                                       class="button"> <span><i
                                 class="fas fa-chevron-left"></i></span> Prev </a></div>
                         <div class="page_number"> 1 / 1</div>
-<!--                        <div class="next"> &lt;!&ndash; next > &ndash;&gt; <a aria-label="Next" href="/blog/page2" class="button">-->
-<!--                            Next <span><i class="fas fa-chevron-right"></i></span> </a> &lt;!&ndash; >> &ndash;&gt; <a aria-label="Next"-->
-<!--                                                                                                       href="/blog/page3"-->
-<!--                                                                                                       class="button"> <span><i-->
-<!--                                class="fas fa-angle-double-right"></i></span> </a></div>-->
+                        <div class="next"> <!-- next > --> <a aria-label="Next" href="/blog/page2" style="visibility:hidden" class="button">
+                            Next <span><i class="fas fa-chevron-right"></i></span> </a> <!-- >> -->
+
+                        </div>
                     </div>
                 </section>
 

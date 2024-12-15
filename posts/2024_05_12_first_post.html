@@ -70,12 +70,12 @@
 <body>
 
 <header class="site-header"> <!-- Logo and title -->
-    <div class="branding"><a href="/"> <img alt="logo img" class="avatar"
-                                            src="/assets/img/soulde_icon2.png" loading="lazy"/>
-    </a> <a class="site-title" href="/"></a></div>
     <!-- Toggle menu -->
     <nav class="clear"><a aria-label="pull" id="pull" class="toggle" href="#"> <i class="fas fa-bars fa-lg"></i> </a>
         <!-- Menu -->
+        <div class="branding"><a href="/">SOULDE
+            <!--                    <img alt="logo img" class="avatar" src="/assets/img/soulde_icon2.png" loading="lazy"/>-->
+        </a></div>
         <ul class="hide">
             <li class="separator"> |</li>
             <li><a class="clear" aria-label="Gallery" title="Gallery" href="/gallery"> <span
@@ -101,38 +101,46 @@
 </header>
 <div class="content">
     <div class="home">
-        <style scoped>
+                <style scoped>
 
-            .call-out_img {
-                background-image: url('/assets/img/header/sightseen.png');
-                max-width: 100%;
-                min-height: 300px;
-            }
+                    html[data-theme=dark]{
+                        --background-img: url('/assets/img/header/book-dark.jpg');
+                    }
+                    html[data-theme=light]{
+                        --background-img: url('/assets/img/header/book.jpg');
+                    }
+                    .call-out_img {
+                        background-image: var(--background-img);
+                        max-width: 100%;
+                        min-height: 300px;
 
-            @media screen and (max-width: 768px) {
-                .call-out_img {
-                    background-image: url('/assets/img/header/sightseen_medium.png');
-                    max-width: 100%;
-                    min-height: 300px;
-                }
-            }
+                    }
+                    @media screen and (max-width: 768px) {
+                        .call-out_img {
+                            background-image: var(--background-img);
+                            max-width: 100%;
+                            min-height: 300px;
 
-            @media screen and (max-width: 576px) {
-                .call-out_img {
-                    background-image: url('/assets/img/header/sightseen_small.png');
-                    max-width: 100%;
-                    min-height: 300px;
-                }
-            }
+                        }
+                    }
 
-        </style>
+                    @media screen and (max-width: 576px) {
+                        .call-out_img {
+                            background-image: var(--background-img);
+                            max-width: 100%;
+                            min-height: 300px;
+
+                        }
+                    }
+
+                </style>
 
 
     </div>
     <article class="post-article">
 
         <div class="call-out call-out_img">
-            <h1 id="Feature+images" class="title">Feature images</h1>
+            <h1 id="Feature+images" class="title">First Post</h1>
             <div class="post-info">
                 <p class="meta">
                     October 29, 2018
@@ -141,7 +149,7 @@
         </div>
 
         <section class="page-content">
-            <h1> First Post</h1>
+
             这是我的第一篇博客。
 
         </section>
@@ -159,6 +167,9 @@
                     class="fa-stack fa-lg"> <i class="fas fa-circle fa-stack-2x"></i> <i
                     class="fab fa-github fa-stack-1x fa-inverse"></i> </span> </a></li>
         </ul>
+    </div>
+    <div class="footer-logo">
+        <p>SOULDE</p>
     </div>
 </footer>
 </body>
