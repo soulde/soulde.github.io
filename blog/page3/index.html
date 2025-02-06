@@ -2,7 +2,7 @@
 <!--
     Type on Strap jekyll theme v2.4.8
     Theme free for personal and commercial use under the MIT license
-    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+    https://github.com/sylhare/blob/master/LICENSE
 -->
 <html lang="en">
 
@@ -36,18 +36,19 @@
     const analyticsName = '';
     const analyticsNameGA4 = ''; </script> <!-- seo tags -->
     <meta property="og:image" content="/assets/img/header/triangular.jpeg">
-    <meta property="og:type" content="website"/> <!-- Begin Jekyll SEO tag v2.8.0 --> <title>Page 3 of 3 for Type on
+    <meta property="og:type" content="website"/> <!-- Begin Jekyll SEO tag v2.8.0 --> <title>Page 2 of 3 for Type on
     Strap | A website with blog posts and pages</title>
     <meta name="generator" content="Jekyll v4.3.3"/>
     <meta property="og:title" content="Type on Strap"/>
     <meta property="og:locale" content="en_US"/>
     <meta name="description" content="A website with blog posts and pages"/>
     <meta property="og:description" content="A website with blog posts and pages"/>
-    <link rel="canonical" href="/blog/page3/"/>
-    <meta property="og:url" content="/blog/page3/"/>
+    <link rel="canonical" href="/blog/page2/"/>
+    <meta property="og:url" content="/blog/page2/"/>
     <meta property="og:site_name" content="Type on Strap"/>
     <meta property="og:type" content="website"/>
-    <link rel="prev" href="/blog/page2"/>
+    <link rel="prev" href="/"/>
+    <link rel="next" href="/blog/page3"/>
     <meta name="twitter:card" content="summary"/>
     <meta property="twitter:title" content="Type on Strap"/>
     <script type="application/ld+json"> {
@@ -55,12 +56,11 @@
         "@type": "WebPage",
         "description": "A website with blog posts and pages",
         "headline": "Type on Strap",
-        "url": "http://localhost:4000/Type-on-Strap/blog/page3/"
+        "url": "http://localhost:4000/blog/page1/"
     }</script> <!-- End Jekyll SEO tag --> <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Type on Strap"
-          href="/feed.xml"/>
-    <link type="application/atom+xml" rel="alternate" href="/feed.xml"
-          title="Type on Strap"/> <!-- Twitter Cards -->
+    <link rel="alternate" type="application/atom+xml" title="Type on Strap" href="/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Type on Strap"/>
+    <!-- Twitter Cards -->
     <meta name="twitter:title" content="Type on Strap">
     <meta name="twitter:description" content="Change header_text in _config.yml">
     <meta name="twitter:card" content="summary">
@@ -70,30 +70,31 @@
 <body>
 
 <header class="site-header"> <!-- Logo and title -->
-    <div class="branding"><a href="/"> <img alt="logo img" class="avatar"
-                                            src="/assets/img/soulde_icon2.png" loading="lazy"/>
-    </a> <a class="site-title" href="/"></a></div>
+
     <!-- Toggle menu -->
     <nav class="clear"><a aria-label="pull" id="pull" class="toggle" href="#"> <i class="fas fa-bars fa-lg"></i> </a>
         <!-- Menu -->
+        <div class="branding"><a href="/">SOULDE
+            <!--                    <img alt="logo img" class="avatar" src="/assets/img/soulde_icon2.png" loading="lazy"/>-->
+        </a></div>
         <ul class="hide">
             <li class="separator"> |</li>
-            <li><a class="clear" aria-label="Gallery" title="Gallery" href="/gallery/"> <span
+            <li><a class="clear" aria-label="Gallery" title="Gallery" href="/gallery"> <span
                     class="navbar-label ">Gallery</span> </a></li>
             <li class="separator"> |</li>
-            <li><a class="clear" aria-label="Portfolio" title="Portfolio" href="/portfolio/"> <span
+            <li><a class="clear" aria-label="Portfolio" title="Portfolio" href="/portfolio"> <span
                     class="navbar-label ">Portfolio</span> </a></li>
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="About Me" title="About Me" href="/about"> <span-->
-<!--                    class="navbar-label ">About Me</span> </a></li>-->
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="Search" title="Search" href="/search/"> <i-->
-<!--                    class="navbar-icon fas fa-search" aria-hidden="true"></i> <span-->
-<!--                    class="navbar-label navbar-label-with-icon">Search</span> </a></li>-->
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="Tags" title="Tags" href="/tags/"> <i-->
-<!--                    class="navbar-icon fas fa-tags" aria-hidden="true"></i> <span-->
-<!--                    class="navbar-label navbar-label-with-icon">Tags</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="About Me" title="About Me" href="/about"> <span-->
+            <!--                    class="navbar-label ">About Me</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="Search" title="Search" href="/search"> <i-->
+            <!--                    class="navbar-icon fas fa-search" aria-hidden="true"></i> <span-->
+            <!--                    class="navbar-label navbar-label-with-icon">Search</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="Tags" title="Tags" href="/tags"> <i-->
+            <!--                    class="navbar-icon fas fa-tags" aria-hidden="true"></i> <span-->
+            <!--                    class="navbar-label navbar-label-with-icon">Tags</span> </a></li>-->
             <li class="separator"> |</li>
             <li><a id="theme-toggle" title=" " aria-label="" onclick="themeToggle()"></a></li>
         </ul>
@@ -103,19 +104,39 @@
     <div class="home">
         <style scoped>
 
+            html[data-theme=dark] {
+                --background-img: url('/assets/img/header/book-dark.jpg');
+            }
+
+            html[data-theme=light] {
+                --background-img: url('/assets/img/header/book.jpg');
+            }
+
             .call-out_img {
-                background-image: url('/assets/img/header/sightseen.png');
+                background-image: var(--background-img);
+                max-width: 100%;
+                min-height: 300px;
+                max-height: 600px;
+
             }
 
             @media screen and (max-width: 768px) {
                 .call-out_img {
-                    background-image: url('/assets/img/header/sightseen_medium.png');
+                    background-image: var(--background-img);
+                    max-width: 100%;
+                    min-height: 300px;
+                    max-height: 600px;
+
                 }
             }
 
             @media screen and (max-width: 576px) {
                 .call-out_img {
-                    background-image: url('/assets/img/header/sightseen_small.png');
+                    background-image: var(--background-img);
+                    max-width: 100%;
+                    min-height: 300px;
+                    max-height: 600px;
+
                 }
             }
 
@@ -125,39 +146,70 @@
         </div>
         <article>
             <meta itemprop="headline" content="">
-            <div class="page__inner-wrap">
-                <section class="page__content" itemprop="text">
-                    <div class="posts">
-                        <div class="post-teaser"><span> <header> <h1> <a aria-label="Markup: Syntax Highlighting"
-                                                                         class="post-link"
-                                                                         href="/syntax/2014/08/08/Markup-Syntax-Highlighting.html"> Markup: Syntax Highlighting </a> </h1> <div
-                                class="post-info"><a href="https://github.com/mmistakes" target="_blank" rel="noopener"> <img
-                                alt="Author's avatar" src="https://avatars3.githubusercontent.com/u/1376749?s=460&v=4"
-                                loading="lazy"> <p class="meta"> Michael Rose - August 08, 2014 </p></a></div> </header> <div
-                                class="excerpt"> Syntax highlighting1 is a feature that displays source code. This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct. Michael’s Rose, Minimal Mistakes &amp;#8617; </div> </span>
-                        </div>
-                        <div class="post-teaser"><span> <header> <h1> <a aria-label="Blogging with title "
-                                                                         class="post-link"
-                                                                         href="/2013/10/18/blogging-with-title.html"> Blogging with title </a> </h1> <div
-                                class="post-info"> <p class="meta"> October 18, 2013 </p></div> </header> <div
-                                class="excerpt"> I am a BIG title </div> </span>
-                        </div>
+            <section class="page__content" itemprop="text">
+
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <a href="/posts/2024_05_12_first_post.html">
+                            <img src="/assets/img/thumbnails/blog_thumbnail/first_blog.png" alt="Image 1">
+                            <div class="card-content">
+                                <h3 class="card-title">First Blog</h3>
+                                <p>The blog is the first blog of mine.</p>
+                                <div class="card-date">2023年12月7日</div>
+                                <div class="card-tags">
+                                    <a href="/blog/classified/learning/index.html" class="tag">Learning</a>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="pagination">
-                        <div class="previous"> <!-- << --> <a aria-label="Prev" href="/blog/page1" class="button"> <span><i
-                                class="fas fa-angle-double-left"></i></span> </a> <!-- < previous --> <a
-                                aria-label="Prev"
-                                href="/blog/page2"
-                                class="button"> <span><i
-                                class="fas fa-chevron-left"></i></span> Prev </a></div>
-                        <div class="page_number"> 3 / 3</div>
-                        <div class="next"> <!-- next > --> <a aria-label="Next" href="" style="visibility:hidden"
-                                                              class="button">
-                            Next <span><i class="fas fa-chevron-right"></i></span> </a></div>
-                    </div>
-                </section>
+
+                    <!--                    &lt;!&ndash; Card 2 &ndash;&gt;-->
+                    <!--                    <div class="card">-->
+                    <!--                        <img src="image2.jpg" alt="Image 2">-->
+                    <!--                        <div class="card-content">-->
+                    <!--                            <h3 class="card-title">My Top 10 Books and Why I Love Them</h3>-->
+                    <!--                            <p>Discover my top 10 favorite books and the profound impact they've had on me.</p>-->
+                    <!--                            <div class="card-date">2023年10月11日</div>-->
+                    <!--                            <div class="card-tags">-->
+                    <!--                                <a href="#" class="tag">Books</a>-->
+                    <!--                                <a href="#" class="tag">Learning</a>-->
+                    <!--                            </div>-->
+
+
+                    <!--                            &lt;!&ndash;                    <header>&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                        <h1>&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                            <a aria-label="First Post" class="post-link" href="/posts/2024_05_12_first_post.html">&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                            First Post !!&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                            </a>&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                        </h1>&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                        <div class="post-info"> <p class="meta"> April 12, 2024 </p></div>&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                    </header>&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                    <div class="excerpt">&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                        First post of soulde! finally started to build personal website, hope that I can succeed this time.&ndash;&gt;-->
+                    <!--                            &lt;!&ndash;                    </div>&ndash;&gt;-->
+
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                </div>
+
+
+            </section>
+            <div class="pagination">
+                <div class="previous"> <!-- << --> <a aria-label="Prev" href="/blog/page1" class="button"> <span><i
+                        class="fas fa-angle-double-left"></i></span> </a> <!-- < previous --> <a
+                        aria-label="Prev"
+                        href="/blog/page2"
+                        class="button"> <span><i
+                        class="fas fa-chevron-left"></i></span> Prev </a></div>
+                <div class="page_number"> 3 / 3</div>
+                <div class="next"> <!-- next > --> <a aria-label="Next" href="" style="visibility:hidden"
+                                                      class="button">
+                    Next <span><i class="fas fa-chevron-right"></i></span> </a></div>
             </div>
+
         </article>
+
     </div>
 </div>
 
@@ -172,6 +224,10 @@
                     class="fab fa-github fa-stack-1x fa-inverse"></i> </span> </a></li>
         </ul>
     </div>
+    <div class="footer-logo">
+        <p>SOULDE</p>
+    </div>
 </footer>
 </body>
 </html>
+

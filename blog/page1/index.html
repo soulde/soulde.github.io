@@ -104,63 +104,110 @@
     <div class="home">
         <style scoped>
 
+            html[data-theme=dark] {
+                --background-img: url('/assets/img/header/book-dark.jpg');
+            }
+
+            html[data-theme=light] {
+                --background-img: url('/assets/img/header/book.jpg');
+            }
+
             .call-out_img {
-                background-image: url('/assets/img/header/sightseen.png');
-                max-width: 3000px;
+                background-image: var(--background-img);
+                max-width: 100%;
+                min-height: 300px;
+                max-height: 600px;
+
             }
 
             @media screen and (max-width: 768px) {
                 .call-out_img {
-                    background-image: url('/assets/img/header/sightseen_medium.png');
+                    background-image: var(--background-img);
                     max-width: 100%;
+                    min-height: 300px;
+                    max-height: 600px;
+
                 }
             }
 
             @media screen and (max-width: 576px) {
                 .call-out_img {
-                    background-image: url('assets/img/header/sightseen_small.png');
+                    background-image: var(--background-img);
                     max-width: 100%;
+                    min-height: 300px;
+                    max-height: 600px;
+
                 }
             }
+
         </style>
         <div class="call-out call-out_img">
             <h1> Hello !!!<br/> Here is soulde' blog</h1>
         </div>
         <article>
             <meta itemprop="headline" content="">
-            <div class="page__inner-wrap">
-                <section class="page__content" itemprop="text">
-                    <div class="posts">
-                        <div class="post-teaser">
-                <span>
-                    <header>
-                        <h1>
-                            <a aria-label="First Post" class="post-link" href="/posts/2024_05_12_first_post.html">
-                            First Post !!
-                            </a>
-                        </h1>
-                        <div class="post-info"> <p class="meta"> April 12, 2024 </p></div>
-                    </header>
-                    <div class="excerpt">
-                        First post of soulde! finally started to build personal website, hope that I can succeed this time.
-                    </div>
-                </span>
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <div class="previous"> <!-- < previous --> <a aria-label="Prev" href=""
-                                                                      style="visibility:hidden"
-                                                                      class="button"> <span><i
-                                class="fas fa-chevron-left"></i></span> Prev </a></div>
-                        <div class="page_number"> 1 / 1</div>
-                        <div class="next"> <!-- next > --> <a aria-label="Next" href="/blog/page2" style="visibility:hidden" class="button">
-                            Next <span><i class="fas fa-chevron-right"></i></span> </a> <!-- >> -->
+            <section class="page__content" itemprop="text">
 
-                        </div>
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <a href="/posts/2024_05_12_first_post.html">
+                            <img src="/assets/img/thumbnails/blog_thumbnail/first_blog.png" alt="Image 1">
+                            <div class="card-content">
+                                <h3 class="card-title">First Blog</h3>
+                                <p>The blog is the first blog of mine.</p>
+                                <div class="card-date">2023年12月7日</div>
+                                <div class="card-tags">
+                                    <a href="/blog/classified/learning/index.html" class="tag">Learning</a>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </section>
 
+<!--                    &lt;!&ndash; Card 2 &ndash;&gt;-->
+<!--                    <div class="card">-->
+<!--                        <img src="image2.jpg" alt="Image 2">-->
+<!--                        <div class="card-content">-->
+<!--                            <h3 class="card-title">My Top 10 Books and Why I Love Them</h3>-->
+<!--                            <p>Discover my top 10 favorite books and the profound impact they've had on me.</p>-->
+<!--                            <div class="card-date">2023年10月11日</div>-->
+<!--                            <div class="card-tags">-->
+<!--                                <a href="#" class="tag">Books</a>-->
+<!--                                <a href="#" class="tag">Learning</a>-->
+<!--                            </div>-->
+
+
+<!--                            &lt;!&ndash;                    <header>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        <h1>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            <a aria-label="First Post" class="post-link" href="/posts/2024_05_12_first_post.html">&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            First Post !!&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        </h1>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        <div class="post-info"> <p class="meta"> April 12, 2024 </p></div>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                    </header>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                    <div class="excerpt">&ndash;&gt;-->
+<!--                            &lt;!&ndash;                        First post of soulde! finally started to build personal website, hope that I can succeed this time.&ndash;&gt;-->
+<!--                            &lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+
+
+            </section>
+            <div class="pagination">
+<!--                <div class="previous"> &lt;!&ndash; < previous &ndash;&gt; <a aria-label="Prev" href=""-->
+
+<!--                                                              class="button"> <span><i-->
+<!--                        class="fas fa-chevron-left"></i></span> Prev </a></div>-->
+                <div class="page_number"> 1 / 1</div>
+<!--                <div class="next"> &lt;!&ndash; next > &ndash;&gt; <a aria-label="Next" href="/blog/page2"-->
+<!--                                                      class="button">-->
+<!--                    Next <span><i class="fas fa-chevron-right"></i></span> </a> &lt;!&ndash; >> &ndash;&gt;-->
+
+<!--                </div>-->
             </div>
+
         </article>
 
     </div>
@@ -176,6 +223,9 @@
                     class="fa-stack fa-lg"> <i class="fas fa-circle fa-stack-2x"></i> <i
                     class="fab fa-github fa-stack-1x fa-inverse"></i> </span> </a></li>
         </ul>
+    </div>
+    <div class="footer-logo">
+        <p>SOULDE</p>
     </div>
 </footer>
 </body>

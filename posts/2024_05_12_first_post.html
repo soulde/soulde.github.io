@@ -101,59 +101,62 @@
 </header>
 <div class="content">
     <div class="home">
-                <style scoped>
+        <style scoped>
 
-                    html[data-theme=dark]{
-                        --background-img: url('/assets/img/header/book-dark.jpg');
-                    }
-                    html[data-theme=light]{
-                        --background-img: url('/assets/img/header/book.jpg');
-                    }
-                    .call-out_img {
-                        background-image: var(--background-img);
-                        max-width: 100%;
-                        min-height: 300px;
+            html[data-theme=dark] {
+                --background-img: url('/assets/img/header/book-dark.jpg');
+            }
 
-                    }
-                    @media screen and (max-width: 768px) {
-                        .call-out_img {
-                            background-image: var(--background-img);
-                            max-width: 100%;
-                            min-height: 300px;
+            html[data-theme=light] {
+                --background-img: url('/assets/img/header/book.jpg');
+            }
 
-                        }
-                    }
+            .call-out_img {
+                background-image: var(--background-img);
+                max-width: 100%;
+                min-height: 500px;
 
-                    @media screen and (max-width: 576px) {
-                        .call-out_img {
-                            background-image: var(--background-img);
-                            max-width: 100%;
-                            min-height: 300px;
+            }
 
-                        }
-                    }
+            @media screen and (max-width: 768px) {
+                .call-out_img {
+                    background-image: var(--background-img);
+                    max-width: 100%;
+                    min-height: 500px;
 
-                </style>
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+                .call-out_img {
+                    background-image: var(--background-img);
+                    max-width: 100%;
+                    min-height: 500px;
+
+                }
+            }
+
+        </style>
 
 
     </div>
+    <div class="call-out call-out_img"></div>
     <article class="post-article">
+        <h1>First Post</h1>
+        <div class="post-meta">
+            <p class="meta-header">Tags</p>
+            <p>
+                <a href="#" class="tag">Learning</a>
 
-        <div class="call-out call-out_img">
-            <h1 id="Feature+images" class="title">First Post</h1>
-            <div class="post-info">
-                <p class="meta">
-                    October 29, 2018
-                </p>
-            </div>
+            </p>
+            <p class="meta-header">Published</p>
+            <p class="post-date">May 12, 2024</p>
         </div>
-
-        <section class="page-content">
-
-            这是我的第一篇博客。
-
+        <hr>
+        <section>
+            <h2>Introduction</h2>
+            <p>这是我的第一篇博客。</p>
         </section>
-
     </article>
 </div>
 

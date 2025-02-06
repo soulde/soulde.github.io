@@ -56,21 +56,138 @@
             <li class="separator"> |</li>
             <li><a class="clear" aria-label="About Me" title="About Me" href="/about"> <span
                     class="navbar-label ">About Me</span> </a></li>
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="Search" title="Search" href="/search"> <i-->
-<!--                    class="navbar-icon fas fa-search" aria-hidden="true"></i> <span-->
-<!--                    class="navbar-label navbar-label-with-icon">Search</span> </a></li>-->
-<!--            <li class="separator"> |</li>-->
-<!--            <li><a class="clear" aria-label="Tags" title="Tags" href="/tags"> <i-->
-<!--                    class="navbar-icon fas fa-tags" aria-hidden="true"></i> <span-->
-<!--                    class="navbar-label navbar-label-with-icon">Tags</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="Search" title="Search" href="/search"> <i-->
+            <!--                    class="navbar-icon fas fa-search" aria-hidden="true"></i> <span-->
+            <!--                    class="navbar-label navbar-label-with-icon">Search</span> </a></li>-->
+            <!--            <li class="separator"> |</li>-->
+            <!--            <li><a class="clear" aria-label="Tags" title="Tags" href="/tags"> <i-->
+            <!--                    class="navbar-icon fas fa-tags" aria-hidden="true"></i> <span-->
+            <!--                    class="navbar-label navbar-label-with-icon">Tags</span> </a></li>-->
             <li class="separator"> |</li>
             <li><a id="theme-toggle" title=" " aria-label="" onclick="themeToggle()"></a></li>
         </ul>
     </nav>
 </header>
+<div class="content">
+    <div class="home">
+        <style scoped>
 
-<footer class="site-footer"><p class="text"> </p>
+            html[data-theme=dark] {
+                --background-img: url('/assets/img/header/book-dark.jpg');
+            }
+
+            html[data-theme=light] {
+                --background-img: url('/assets/img/header/book.jpg');
+            }
+
+            .call-out_img {
+                background-image: var(--background-img);
+                max-width: 100%;
+                min-height: 300px;
+
+            }
+
+            @media screen and (max-width: 768px) {
+                .call-out_img {
+                    background-image: var(--background-img);
+                    max-width: 100%;
+                    min-height: 300px;
+
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+                .call-out_img {
+                    background-image: var(--background-img);
+                    max-width: 100%;
+                    min-height: 300px;
+
+                }
+            }
+
+        </style>
+
+
+    </div>
+    <article class="post-article">
+
+        <div class="call-out call-out_img">
+            <h1 id="Feature+images" class="title">Dual Channel USB2CAN Transmitter</h1>
+            <div class="post-info">
+                <p class="meta">
+                    September 15, 2024
+                </p>
+            </div>
+        </div>
+
+        <section class="page-content">
+            <h2 id='功能介绍'><span>功能介绍</span></h2>
+            <p><span>SOULDE Studio USB2CAN转换模块是一款高性能、小体积的USB转CAN接口设备，具有以下特点：</span></p>
+            <ol start=''>
+                <li>
+                    <p><span>小体积：模块尺寸仅为27mm </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.09ex" role="img"
+                                 focusable="false" viewBox="0 -491 778 482" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" style="vertical-align: 0.02ex;">
+                                <defs>
+                                    <path id="MJX-4-TEX-N-D7"
+                                          d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path>
+                                </defs>
+                                <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                                    <g data-mml-node="math">
+                                        <g data-mml-node="mo">
+                                            <use data-c="D7" xlink:href="#MJX-4-TEX-N-D7"></use>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+
+                        <script type="math/tex">\times</script>
+                        <span> 35mm ，便于安装。</span></p>
+                </li>
+                <li><p>
+                    <span>高速传输：支持最高</span><code>1Mbps(CAN)</code><span>的数据传输速率，满足高速CAN总线通信需求。</span>
+                </p></li>
+                <li><p><span>USB虚拟串口：采用USB2.0 FS通讯协议，同时使用USB Type-C接口进行数据传输和供电。</span></p></li>
+                <li><p><span>两路CAN接口：具备两个独立的CAN通道，可同时连接两个CAN网络。</span></p></li>
+                <li><p><span>支持FDCAN：兼容FDCAN协议，适应更广泛的CAN总线应用。</span></p></li>
+                <li>
+                    <p><span>匹配电阻：模块为CAN总线设置了120 </span>
+                        <mjx-container class="MathJax" jax="SVG" style="position: relative;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.633ex" height="1.593ex" role="img"
+                                 focusable="false" viewBox="0 -704 722 704" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" style="vertical-align: 0px;">
+                                <defs>
+                                    <path id="MJX-6-TEX-N-3A9"
+                                          d="M55 454Q55 503 75 546T127 617T197 665T272 695T337 704H352Q396 704 404 703Q527 687 596 615T666 454Q666 392 635 330T559 200T499 83V80H543Q589 81 600 83T617 93Q622 102 629 135T636 172L637 177H677V175L660 89Q645 3 644 2V0H552H488Q461 0 456 3T451 20Q451 89 499 235T548 455Q548 512 530 555T483 622T424 656T361 668Q332 668 303 658T243 626T193 560T174 456Q174 380 222 233T270 20Q270 7 263 0H77V2Q76 3 61 89L44 175V177H84L85 172Q85 171 88 155T96 119T104 93Q109 86 120 84T178 80H222V83Q206 132 162 199T87 329T55 454Z"></path>
+                                </defs>
+                                <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                                    <g data-mml-node="math">
+                                        <g data-mml-node="mi">
+                                            <use data-c="3A9" xlink:href="#MJX-6-TEX-N-3A9"></use>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <mjx-assistive-mml unselectable="on" display="inline">
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi mathvariant="normal">Ω</mi>
+                                </math>
+                            </mjx-assistive-mml>
+                        </mjx-container>
+                        <script type="math/tex">\Omega</script>
+                        <span>匹配电阻，并设置拨码开关方便用户选择是否接入。</span></p>
+                </li>
+                <li><p><span>设备名绑定：模块具有USB设备PID设置功能。通过拨码开关设置，可在Linux上将设备设置为</span><code>USB2CAN0-USB2CAN3</code><span>，消除模块插入后设备名称变化以及多个模块之间的区分问题。</span>
+                </p></li>
+            </ol>
+        </section>
+
+    </article>
+</div>
+
+<footer class="site-footer"><p class="text"></p>
     <div class="footer-icons">
         <ul> <!-- Social icons from Font Awesome, if enabled -->
             <!--            <li><a feed.xml href="/feed.xml" title="Follow RSS feed" target="_blank"> <span-->
@@ -80,6 +197,9 @@
                     class="fa-stack fa-lg"> <i class="fas fa-circle fa-stack-2x"></i> <i
                     class="fab fa-github fa-stack-1x fa-inverse"></i> </span> </a></li>
         </ul>
+    </div>
+    <div class="footer-logo">
+        <p>SOULDE</p>
     </div>
 </footer>
 

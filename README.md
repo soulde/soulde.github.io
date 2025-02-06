@@ -72,7 +72,7 @@ Here are the main files of the template
 |  ├── biblio.yml              # To create a reference bibliography
 |  ├── social.yml              # Social configurations to share posts (RSS, shares, ...)
 |  └── icons.yml               # Footer icons (Twitter, Github, Stackoverflow, ...)
-└── index.html                 # sample home page (blog page paginated)
+└── index.html                 # sample home page (blog_thumbnail page paginated)
 ```
 	
 ## Configure Type on Strap 🛠
@@ -109,7 +109,7 @@ And here is the basic information you will need in your `_config.yml` for it to 
 # BLOG CONFIGURATION
 post_navigation: true
 paginate: 10
-paginate_path: "blog/page:num"
+paginate_path: "blog_thumbnail/page:num"
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 ```
 
@@ -125,7 +125,7 @@ Change these variables in `_config.yml`:
 ```yml
 title: My Jekyll Blog                 # Name of website
 avatar: assets/img/avatar.png         # Path of avatar image, to be displayed in the theme's header
-description: My blog posts            # Short description, primarily used by search engines
+description: My blog_thumbnail posts            # Short description, primarily used by search engines
 favicon: assets/favicon.ico           # Icon displayed in the tab
 color_theme: auto                     # color theme auto, dark or light
 ```
@@ -141,7 +141,7 @@ Using _auto_ you'll have a tiny icon in the navbar allowing the use to manually 
 Customize your site header/footer with these variables in `_config.yml`:
 
 ```yml
-header_text: Welcome to my Jekyll blog
+header_text: Welcome to my Jekyll blog_thumbnail
 footer_text: Copyright 2017
 ```
 
@@ -317,7 +317,7 @@ layout: post
 title: Hello World                                # Title of the page
 hide_title: true                                  # [Opt] Hide the title when displaying the post, but shown in lists of posts
 feature-img: "assets/img/sample.png"              # [Opt] Add a feature-image to the post
-thumbnail: "assets/img/thumbnails/sample-th.png"  # [Opt] Add a thumbnail image on blog view
+thumbnail: "assets/img/thumbnails/sample-th.png"  # [Opt] Add a thumbnail image on blog_thumbnail view
 color: rgb(80,140,22)                             # [Opt] Add the specified colour as feature image, and change link colors in post
 position: 1                                       # [Opt] Set position on the menu navigation bar
 tags: [sample, markdown, html]                    # [Opt] Add tags to the page

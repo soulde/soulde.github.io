@@ -1,5 +1,5 @@
 /*
- * Here are all the gulp tasks you can use to help manage your blog
+ * Here are all the gulp tasks you can use to help manage your blog_thumbnail
  * Use `npm install` to install all the dependencies located in package.json
  * If you have an issue with sharp, try: `npm rebuild`.
  * Then `gulp default` to minimize css and images.
