@@ -13441,7 +13441,7 @@ td, th {
 @font-face {
     font-family: "Pacifico";
     src: url("../../assets/fonts/Pacifico/Pacifico.eot");
-    src: url("../../assets/fonts/Pacifico/Pacifico.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Pacifico/Pacifico.woff2") format("woff2"), url("../../assets/fonts/Pacifico/Pacifico.woff") format("woff"), url("../../assets/fonts/Pacifico/Pacifico.ttf") format("truetype"), url("../../assets/fonts/Pacifico/Pacifico.svg#Pacifico") format("svg");
+    src: url("../../assets/fonts/Pacifico/Pacifico.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Pacifico/Pacifico.ttf") format("truetype"), url("../../assets/fonts/Pacifico/Pacifico.svg#Pacifico") format("svg");
     font-weight: normal;
     font-style: normal
 }
