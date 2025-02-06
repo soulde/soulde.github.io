@@ -16134,7 +16134,7 @@ table.dataframe {
 }
 
 .site-header .avatar {
-    height: 2em;
+    /*height: 2em;*/
     /*width: 15em;*/
     float: left;
     margin-top: -0.5%;
@@ -17643,11 +17643,11 @@ h1.title {
 
 .branding {
     float: left;
-    font-size: 3em;
     margin-left: 0.5em;
-    font-family: "Pacifico", fantasy;
 }
-
+.branding img {
+    object-fit: cover;
+}
 .main_subtitle {
     border-radius: 30px;
     border: solid 1px rgb(110, 109, 109);
