@@ -15331,7 +15331,8 @@ summary {
     }
 
     h2 {
-        font-size: 1.5em
+        font-size: 1.5em;
+
     }
 
     h3 {
@@ -17695,10 +17696,11 @@ h1.title {
 @media screen and (max-width: 768px) {
     .card {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
         margin-bottom: 1em;
-        max-height: 230px;
+        max-height: 200px;
+        /*padding-bottom: 15em;*/
     }
 }
 
@@ -17726,7 +17728,20 @@ h1.title {
     color: #333;
 
 }
+@media screen and (max-width: 768px) {
+    .card-title {
+        padding-top: 1em;
+        font-size: 1em;
+    }
+    .card-date {
+        font-size: 12px;
+    }
+    .card-content p{
+        font-size: 0.8em;
+        display:none;
+    }
 
+}
 .card-date {
     font-size: 14px;
     color: #666;
@@ -17759,6 +17774,7 @@ h1.title {
 
 .blog-list-item {
     display: flex;
+    /*grid-template-columns: 1fr 2fr;*/
     gap: 1em;
     /*align-items: center;*/
     overflow: hidden;
@@ -17767,32 +17783,52 @@ h1.title {
     border: solid 3px #fbf3e9;
     background-color: #fdf2da;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
 }
 
 .blog-card-img {
     padding: 0;
     overflow: hidden;
-    margin: 0;
-    width: 20em; /* 让图片宽度填满单元格 */
-    height: auto; /* 高度自动，由宽度和object-fit决定 */
-    object-fit: cover; /* 防止图片变形 */
-    max-width: 100%;
-    max-height: 9em;
-}
 
+    width: auto; /* 让图片宽度填满单元格 */
+    height: 13em; /* 高度自动，由宽度和object-fit决定 */
+    object-fit: cover; /* 防止图片变形 */
+    min-width: 100%;
+    margin-bottom: -10px;
+}
+.blog-card-img-main {
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    height: 15em;
+    width: auto;
+    object-fit: cover;
+    margin-bottom: -10px;
+    padding:0;
+    margin-right: 0;
+    margin-left: 0;
+
+}
 @media screen and (max-width: 768px) {
     .blog-list-item {
-        display: grid;
+        display: block;
+        padding-left: 1em;
     }
-
+    .blog-list-item p {
+        font-size: 0.8em
+    }
     .blog-card-img {
         overflow: hidden;
         max-height: 100%;
         max-width: 100%;
-        height: 230px;
+        height: 15em;
         width: auto;
         object-fit: cover;
         margin-bottom: -10px;
+        /*display: none;*/
+    }
+    .blog-card-img-main{
+        display: none;
     }
 }
 
