@@ -15954,25 +15954,25 @@ table.dataframe {
 
 @media (max-width: 2000px) {
     .posts .post-teaser, .feature-image footer, .feature-image .post-content, .comments, article, .site-footer {
-        padding: 4% 16%
+        padding: 4% 14%
     }
 }
 
 @media (max-width: 1400px) {
     .posts .post-teaser, .feature-image footer, .feature-image .post-content, .comments, article, .site-footer {
-        padding: 6% 9%
+        padding: 6% 7%
     }
 }
 
 @media (max-width: 1000px) {
     .posts .post-teaser, .feature-image footer, .feature-image .post-content, .comments, article, .site-footer {
-        padding: 6% 6%
+        padding: 6% 4%
     }
 }
 
 @media (max-width: 576px) {
     .posts .post-teaser, .feature-image footer, .feature-image .post-content, .comments, article, .site-footer {
-        padding: 2% 4%
+        padding: 2% 2%
     }
 }
 
@@ -16097,7 +16097,6 @@ table.dataframe {
 .site-footer .footer-logo {
     margin-top: 0.4em;
     font-family: "Pacifico", fantasy;
-    font-size: 6em;
     color: var(--header-link)
 }
 
@@ -17683,7 +17682,7 @@ h1.title {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
 }
 
@@ -17697,7 +17696,6 @@ h1.title {
     .card {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
         margin-bottom: 1em;
         max-height: 200px;
         /*padding-bottom: 15em;*/
